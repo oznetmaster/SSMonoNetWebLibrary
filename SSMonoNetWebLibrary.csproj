@@ -1,0 +1,207 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6DF8264F-D5B9-4F2B-BFD4-4438835D905E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSMonoNetWebLibrary</RootNamespace>
+    <AssemblyName>SSMonoNetWebLibrary</AssemblyName>
+    <ProjectTypeGuids>{0B4745B0-194B-4BB6-8E21-E9057CA92500};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>SmartDeviceProject1</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SSHARP;NETCF;NETCF_3_5;SECURITY_DEP;SSL;NET_4_0</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowedReferenceRelatedFileExtensions>.allowedReferenceRelatedFileExtensions</AllowedReferenceRelatedFileExtensions>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FileAlignment>512</FileAlignment>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <DefineConstants>SSHARP;NETCF;NETCF_3_5;SECURITY_DEP;SSL; NET_4_0</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="SimplSharpCustomAttributesInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpCustomAttributesInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpHelperInterface, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpHelperInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SimplSharpReflectionInterface, Version=1.0.5583.25238, Culture=neutral, PublicKeyToken=1099c178b3b54c3b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ProgramData\Crestron\SDK\SimplSharpReflectionInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpCrestronExtensionsLibrary, Version=1.0.0.29295, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpCrestronExtensionsLibrary\SSharpCrestronExtensionsLibrary\bin\Release\SSharpCrestronExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSharpReflectionExtensionsLibrary, Version=1.0.0.21996, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSharpReflectionExtensionsLibrary\SSharpReflectionExtensionsLibrary\bin\Release\SSharpReflectionExtensionsLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoCryptographyLibrary, Version=1.0.0.23339, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoCryptographyLibrary\SSMonoCryptographyLibrary\bin\Release\SSMonoCryptographyLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoIOLibrary, Version=1.0.0.22079, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoIOLibrary\SSMonoIOLibrary\bin\Release\SSMonoIOLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoNetLibrary, Version=1.0.0.16107, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SSMonoNetLibrary\bin\Release\SSMonoNetLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSslStreamLibrary, Version=1.0.0.14468, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSslStreamLibrary\SSMonoSslStreamLibrary\bin\Release\SSMonoSslStreamLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoSupportLibrary, Version=1.0.0.24050, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoSupportLibrary\bin\Release\SSMonoSupportLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoThreadingLibrary, Version=1.0.0.19190, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoThreadingLibrary\SSMonoThreadingLibrary\bin\Release\SSMonoThreadingLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoThreadPoolLibrary, Version=1.0.0.22179, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoThreadingLibrary\SSMonoThreadPoolLibrary\bin\Release\SSMonoThreadPoolLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoTupleLibrary, Version=1.0.0.20429, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoTupleLibrary\SSMonoTupleLibrary\bin\Release\SSMonoTupleLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="SSMonoX509CertificatesLibrary, Version=1.0.0.27674, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SSMonoX509CertificatesLibrary\SSMonoX509CertificatesLibrary\bin\Release\SSMonoX509CertificatesLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthenticationManager.cs" />
+    <Compile Include="AuthenticationSchemes.cs" />
+    <Compile Include="AuthenticationSchemeSelector.cs" />
+    <Compile Include="Authorization.cs" />
+    <Compile Include="BasicClient.cs" />
+    <Compile Include="BindIPEndPoint.cs" />
+    <Compile Include="Cache\HttpCacheAgeControl.cs" />
+    <Compile Include="Cache\HttpRequestCacheLevel.cs" />
+    <Compile Include="Cache\HttpRequestCachePolicy.cs" />
+    <Compile Include="Cache\RequestCacheLevel.cs" />
+    <Compile Include="Cache\RequestCachePolicy.cs" />
+    <Compile Include="ChunkedInputStream.cs" />
+    <Compile Include="ChunkStream.cs" />
+    <Compile Include="CredentialCache.cs" />
+    <Compile Include="DecompressionMethods.cs" />
+    <Compile Include="DefaultCertificatePolicy.cs" />
+    <Compile Include="DigestClient.cs" />
+    <Compile Include="EndPointListener.cs" />
+    <Compile Include="EndPointManager.cs" />
+    <Compile Include="FileWebRequest.cs" />
+    <Compile Include="FileWebRequestCreator.cs" />
+    <Compile Include="FileWebResponse.cs" />
+    <Compile Include="FtpAsyncResult.cs" />
+    <Compile Include="FtpDataStream.cs" />
+    <Compile Include="FtpRequestCreator.cs" />
+    <Compile Include="FtpStatus.cs" />
+    <Compile Include="FtpStatusCode.cs" />
+    <Compile Include="FtpWebRequest.cs" />
+    <Compile Include="FtpWebResponse.cs" />
+    <Compile Include="GlobalProxySelection.cs" />
+    <Compile Include="HttpConnection.cs" />
+    <Compile Include="HttpContinueDelegate.cs" />
+    <Compile Include="HttpListener.cs" />
+    <Compile Include="HttpListenerBasicIdentity.cs" />
+    <Compile Include="HttpListenerContext.cs" />
+    <Compile Include="HttpListenerException.cs" />
+    <Compile Include="HttpListenerPrefixCollection.cs" />
+    <Compile Include="HttpListenerRequest.cs" />
+    <Compile Include="HttpListenerResponse.cs" />
+    <Compile Include="HttpRequestCreator.cs" />
+    <Compile Include="HttpRequestHeader.cs" />
+    <Compile Include="HttpResponseHeader.cs" />
+    <Compile Include="HttpStatusCode.cs" />
+    <Compile Include="HttpStreamAsyncResult.cs" />
+    <Compile Include="HttpVersion.cs" />
+    <Compile Include="HttpWebRequest.cs" />
+    <Compile Include="HttpWebResponse.cs" />
+    <Compile Include="IAuthenticationModule.cs" />
+    <Compile Include="ICertificatePolicy.cs" />
+    <Compile Include="ICredentialPolicy.cs" />
+    <Compile Include="IWebConnectionState.cs" />
+    <Compile Include="IWebProxy.cs" />
+    <Compile Include="IWebRequestCreate.cs" />
+    <Compile Include="ListenerAsyncResult.cs" />
+    <Compile Include="ListenerPrefix.cs" />
+    <Compile Include="Mono.Security.Protocol.Tls\HttpsClientStream.cs" />
+    <Compile Include="MonoHttpDate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProtocolViolationException.cs" />
+    <Compile Include="RequestStream.cs" />
+    <Compile Include="ResponseStream.cs" />
+    <Compile Include="SecurityProtocolType.cs" />
+    <Compile Include="Security\AuthenticationLevel.cs" />
+    <Compile Include="Security\TokenImpersonationLevel.cs" />
+    <Compile Include="ServicePoint.cs" />
+    <Compile Include="ServicePointManager.cs" />
+    <Compile Include="SimpleAsyncResult.cs" />
+    <Compile Include="Sockets\IPPacketInformation.cs" />
+    <Compile Include="Sockets\SendPacketsElement.cs" />
+    <Compile Include="Sockets\SocketAsyncEventArgs.cs" />
+    <Compile Include="Sockets\SocketAsyncOperation.cs" />
+    <Compile Include="WebAsyncResult.cs" />
+    <Compile Include="WebConnection.cs" />
+    <Compile Include="WebConnectionData.cs" />
+    <Compile Include="WebConnectionGroup.cs" />
+    <Compile Include="WebConnectionStream.cs" />
+    <Compile Include="WebException.cs" />
+    <Compile Include="WebExceptionStatus.cs" />
+    <Compile Include="WebHeaderCollection.cs" />
+    <Compile Include="WebProxy.cs" />
+    <Compile Include="WebRequest.cs" />
+    <Compile Include="WebRequestMethods.cs" />
+    <Compile Include="WebResponse.cs" />
+    <None Include="Properties\ControlSystem.cfg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>rem  S# preparation will execute after these operations</PostBuildEvent>
+  </PropertyGroup>
+</Project>

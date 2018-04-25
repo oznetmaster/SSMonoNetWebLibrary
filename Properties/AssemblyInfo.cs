@@ -2,7 +2,6 @@
 using System.Runtime.CompilerServices;
 
 [assembly: AssemblyTitle ("SSMonoNetWebLibrary")]
-[assembly: AssemblyCompany ("")]
 [assembly: AssemblyProduct ("SSMonoNetWebLibrary")]
 [assembly: AssemblyCompany ("Nivloc Enterprises Ltd")]
 [assembly: AssemblyDescription ("Mono System.Net ported to Crestron S#")]

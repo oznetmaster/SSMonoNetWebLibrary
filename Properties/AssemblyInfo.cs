@@ -9,5 +9,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyVersion ("1.0.0.*")]
 
 [assembly: InternalsVisibleTo ("SSMonoNetHttpLibrary")]
+[assembly: InternalsVisibleTo ("SSMonoProNetWebLibrary")]
+[assembly: InternalsVisibleTo ("SSMonoProNetWebAsyncLibrary")]
 [assembly: InternalsVisibleTo ("SSMonoNetTests")]
 
